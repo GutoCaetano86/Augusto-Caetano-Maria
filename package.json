@@ -1,0 +1,25 @@
+{
+  "name": "augusto-caetano-maria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GutoCaetano86/Augusto-Caetano-Maria.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GutoCaetano86/Augusto-Caetano-Maria/issues"
+  },
+  "homepage": "https://github.com/GutoCaetano86/Augusto-Caetano-Maria#readme",
+  "dependencies": {
+    "next": "^12.1.6",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  }
+}
