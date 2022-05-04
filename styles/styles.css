@@ -110,7 +110,7 @@ section {
 .top {
     color: #ffff;
     display: flex;
-    background: url("../public/banner-back.jpg");
+    background: url("../public/banner-back-2.jpg");
     height: 100vh;
     min-height: 500px;
     background-size: cover;
