@@ -2,7 +2,7 @@ import Head from "next/head"
 import Menu from '../components/Menu'
 
 
-function Home() {
+function Home( {data}) {
   return (
       <div>
         <Head>
@@ -19,15 +19,15 @@ function Home() {
             <div className="max-width">
                 <div className="top-content">
                     <div className="text-1">
-                        Temos a solução
+                        {data.datahome.text_one}
                     </div>
                     <div className="text-2">
-                        que a sua empresa precisa.
+                        {data.datahome.text_two}
                     </div>
                     <div className="text-3">
-                        Podemos ajudar a sua empresa!
+                        {data.datahome.text_three}
                     </div>
-                    <a href="/contato">Entrar em contato</a>
+                    <a href={data.datahome.btn_link}>{data.datahome.btn_title}</a>
                 </div>
             </div>
         </section>
@@ -36,4 +36,13 @@ function Home() {
       </div>
     )
 }
+
+export async function getServerSideProps() {
+    const response = await fetch(`http://localhost:8080/`);
+    const data = await response.json();
+    //console.log(data);
+
+    return { props: { data } };
+}
+
 export default  Home

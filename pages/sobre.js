@@ -2,7 +2,7 @@ import Head from "next/head"
 import Menu from '../components/Menu'
 
 
-function Home() {
+function Sobre() {
   return (
       <div>
         <Head>
@@ -20,4 +20,4 @@ function Home() {
       </div>
     )
 }
-export default  Home
+export default  Sobre
