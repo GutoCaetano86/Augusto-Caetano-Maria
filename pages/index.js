@@ -38,7 +38,7 @@ function Home( {data}) {
 }
 
 export async function getServerSideProps() {
-    const response = await fetch(`http://localhost:8080/`);
+    const response = await fetch(`back-end-dusky-delta.vercel.app/`);
     const data = await response.json();
     //console.log(data);
 
