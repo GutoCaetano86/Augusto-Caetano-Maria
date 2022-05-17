@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/GutoCaetano86/Augusto-Caetano-Maria#readme",
   "dependencies": {
+    "async_hooks": "^1.0.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
