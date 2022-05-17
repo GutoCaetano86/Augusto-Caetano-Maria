@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Menu from '../components/Menu'
-import app from "./app"
+
 
 export async function getServerSideProps() {
     const response = await fetch(`http://localhost:8080/`);
