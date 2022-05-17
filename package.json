@@ -18,8 +18,15 @@
   },
   "homepage": "https://github.com/GutoCaetano86/Augusto-Caetano-Maria#readme",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
     "next": "^12.1.6",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "require": "^2.4.20",
+    "sequelize": "^6.19.0",
+    "tedious": "^14.5.0"
   }
 }
