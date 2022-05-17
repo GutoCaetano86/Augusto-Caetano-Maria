@@ -1,8 +1,15 @@
 import Head from "next/head"
 import Menu from '../components/Menu'
 
+export async function getServerSideProps() {
+    const response = await fetch(`http://localhost:8080/`);
+    const data = await response.json();
+    //console.log(data);
 
-function Home( {data}) {
+    return { props: { data } };
+}
+
+export default function Home( {data}) {
   return (
       <div>
         <Head>
@@ -36,13 +43,3 @@ function Home( {data}) {
       </div>
     )
 }
-
-export async function getServerSideProps() {
-    const response = await fetch(`http://localhost:8080/`);
-    const data = await response.json();
-    //console.log(data);
-
-    return { props: { data } };
-}
-
-export default  Home
