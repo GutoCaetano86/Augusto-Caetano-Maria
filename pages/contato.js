@@ -34,6 +34,7 @@ function Contato() {
 
       try{
         const res = await fetch('http://localhost:8080/add-msg-contact', {
+        //const res = await fetch('./app/add-msg-contact', {
           method: 'POST',
           body: JSON.stringify(DataForm),
           headers: { 'Content-Type': 'application/json'}

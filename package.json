@@ -28,12 +28,15 @@
     "express": "^4.18.1",
     "fs": "^0.0.1-security",
     "mysql2": "^2.3.3",
+    "net": "^1.0.2",
     "next": "^12.1.6",
     "path": "^0.12.7",
+    "pg-hstore": "^2.3.4",
+    "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "require": "^2.4.20",
-    "sequelize": "^6.19.0",
+    "sequelize": "^6.19.1",
     "tedious": "^14.5.0"
   }
 }
