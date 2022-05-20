@@ -4,6 +4,7 @@ const app = express();
 
 const Home = require('../../models/Home');
 const MSGContact = require('../../models/MSGContact');
+const { func } = require('prop-types');
 
 app.use(express.json())
 
@@ -88,6 +89,6 @@ app.post("/add-msg-contact", async (req, res) => {
 
 
 
-app.listen(8080, () => {
-    console.log("Servidor iniciado na porta 8080: http://localhost:8080");
+app.listen('3000/api/app', () => {
+    console.log("Servidor iniciado na porta 3000: http://localhost:3000/api/app");
 })
