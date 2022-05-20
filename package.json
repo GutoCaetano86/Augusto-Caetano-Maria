@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "prod": "node pages/api/app.js"
+    "dev": "next dev"
   },
   "browser": {
     "fs": false,

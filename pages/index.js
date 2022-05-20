@@ -4,11 +4,8 @@ import Menu from '../components/Menu'
 
 
 export async function getServerSideProps() {
-    const response = await fetch(`http://localhost:3000/api/app`);
-    //const response = await fetch('/api/app');
-    //const response = await axios.get('/api/app')
+    const response = await fetch(`http://localhost:8080`);
     const data = await response.json();
-    //console.log(data);
 
     return { props: { data } };
 }
